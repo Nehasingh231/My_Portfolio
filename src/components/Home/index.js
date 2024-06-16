@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useState, useEffect } from 'react'
+import Loader from 'react-loaders'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -31,6 +32,7 @@ const Home = () => {
     return () => clearTimeout(timer) // Cleanup function to clear the timeout
   }, [])
   return (
+    <>
     <div className="container home-page">
       <div className="text-zone">
         <h1>
@@ -57,6 +59,8 @@ const Home = () => {
         </Link>
       </div>
     </div>
+    <Loader type="pacman" />
+    </>
   )
 }
 
