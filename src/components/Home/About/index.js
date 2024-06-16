@@ -34,8 +34,18 @@ const About = () => {
             idx={15}
           />
         </h1>
-        <p></p>
-        <p></p>
+
+     <p>Hello! I'm Neha Singh,
+         a passionate and dedicated frontend developer
+         looking for a role in established IT company with the opportunity
+         to work with the latest technologies on challenging and diverse projects.
+     </p>
+     <p>
+         I'm quitely confident,curious and also improving myself perpetually.
+         I enjoy turning complex problems into simple, beautiful, and intuitive designs.
+         <br />
+         I love building web applications that are not only functional but also provide an excellent user experience.
+     </p>
       </div>
       <div className="stage-cube-cont">
       <div className='cubespinner'>

@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom'
 import './index.scss'
+import profileImage from '../../assets/images/neha img.jpg'
 import AnimatedLetters from '../AnimatedLetters'
 import { useState, useEffect } from 'react'
 import Loader from 'react-loaders'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['n', 'e', 'h', 'a']
+  const nameArray = ['N', 'e', 'h', 'a', ' ', 'S', 'i', 'n', 'g', 'h']
   const jobArray = [
     'w',
     'e',
@@ -58,6 +59,9 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
+      <div className="image-zone">
+      <img src={profileImage} alt="Profile" />
+    </div>
     </div>
     <Loader type="pacman" />
     </>
