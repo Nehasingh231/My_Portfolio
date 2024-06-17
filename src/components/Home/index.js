@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './index.scss'
-import profileImage from '../../assets/images/neha img.jpg'
+import profileImage from '../../assets/images/neha img 2.jpg'
 import AnimatedLetters from '../AnimatedLetters'
 import { useState, useEffect } from 'react'
 import Loader from 'react-loaders'
@@ -60,9 +60,11 @@ const Home = () => {
         </Link>
       </div>
       <div className="image-zone">
+    
       <img src={profileImage} alt="Profile" />
     </div>
     </div>
+    
     <Loader type="pacman" />
     </>
   )
