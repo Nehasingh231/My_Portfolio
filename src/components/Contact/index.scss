@@ -65,5 +65,82 @@
         border: 1px solid yellow;
         float: right;
         border-radius: 4px;
+
+        &.glow {
+            border: 1px solid rgb(213, 228, 71);
+            animation: glow 1.5s infinite alternate;
+          }
     }
 }
+
+
+@keyframes glow {
+    0% {
+      border-color: yellow;
+    }
+    100% {
+      border-color: rgb(5, 84, 90);
+      box-shadow: 0 0 10px rgb(211, 8, 238), 0 0 10px rgb(211, 8, 238),0 0 10px rgb(211, 8, 238);
+    }
+  }
+  
+  // Keyframes for other animations (if not defined already)
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes rotateIn {
+    0% {
+      transform: rotate(-360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  .info-map {
+    position: absolute;
+    border-radius: 10px;
+    background-color: #8d6e63;
+    top:50px;
+    right: 30%;
+    z-index: 999999;
+    width: 267px;
+    padding: 20px;
+    color: white;
+    font-family: 'Helvetica';
+    font-size: 17px;
+    font-weight: 300;
+    opacity: 0;
+    animation: fadeIn 1s 1.5s;
+    animation-fill-mode: forwards;
+
+     span{
+      font-size:16px;
+      color:#ffee58;
+      display: block;
+      padding-top: 20px;
+     }
+  }
+
+  .map-wrap{
+  background-color:rgba(8,253,216,0.1) ;
+  float: right;
+  width: 53%;
+  height: 100%;
+  }
+
+  .leaflet-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      opacity: 0;
+      animation:backInRight 1s 1.2s;
+      animation-fill-mode: forwards;
+  }
+  

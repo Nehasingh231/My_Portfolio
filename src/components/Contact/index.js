@@ -2,6 +2,7 @@ import Loader from 'react-loaders';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useState, useEffect } from 'react';
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -57,13 +58,32 @@ const Contact = () => {
         required ></textarea>
         </li>
         <li>
-        <input type='submit' className='flat-button' value="SEND" />
+        <input type='submit' className='flat-button image-zone flat-button glow' value="SEND" />
         </li>
         </ul>
         </form>
         </div>
         </div>
         </div>
+        <div className="info-map">
+        
+        Neha Singh,
+        <br />
+        India,
+        <br />
+        Bihar,Siwan 841241<br />
+        Pachrukhi. <br />
+        <span>singhneha234@gmail.com</span>
+        </div>
+        <div className='map-wrap'>
+          <MapContainer center={[26.0774158,84.3392215]} zoom={13}>
+          <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'  />
+            <Marker position={[26.0774158,84.3392215]}>
+              <Popup>Neha lives here, Come over for a cup of cofee..😍</Popup>
+            </Marker>
+          </MapContainer>
+        </div>
+       
         <Loader type="pacman" />
         </>
     )

@@ -38,7 +38,7 @@ const Home = () => {
       <div className="text-zone">
         <h1>
           <span className={letterClass}>H</span>
-          <span className={`${letterClass}_12`}>i,</span>
+          <span className={`${letterClass}_12`}>i👋</span>
           <br />
           <span className={`${letterClass}_13`}>I</span>
           <span className={`${letterClass}_14`}>'m</span>{' '}
@@ -55,11 +55,11 @@ const Home = () => {
           />
         </h1>
         <h2>Frontend Developer / JavaScript Expert / React Expert</h2>
-        <Link to="/contact" className="flat-button">
+        <Link to="/contact" className="flat-button flat-button glow">
           CONTACT ME
         </Link>
       </div>
-      <div className="image-zone">
+      <div className="image-zone flat-button glow">
     
       <img src={profileImage} alt="Profile" />
     </div>
