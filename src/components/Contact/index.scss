@@ -134,6 +134,11 @@
   width: 53%;
   height: 100%;
   }
+  
+  .popup{
+    font-size: 17px;
+    font-family: cursive;
+  }
 
   .leaflet-container {
       width: 100%;
@@ -143,4 +148,5 @@
       animation:backInRight 1s 1.2s;
       animation-fill-mode: forwards;
   }
+
   
