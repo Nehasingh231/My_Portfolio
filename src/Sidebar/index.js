@@ -14,6 +14,7 @@ const Sidebar = () => (
           <Link className='logo' to='/'>
                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSY_nf-ePbiqEUVb1NNelR4uv_L_87UIhwJA&usqp=CAU" alt="logo" />
           </Link>
+
           <nav>
                <NavLink exact="true" activeclassname="active" to="/">
                     <FontAwesomeIcon icon={faHome} color="#4d4d4e" />

@@ -26,7 +26,9 @@ const About = () => {
   return (
     <>
     <div className="container about-page">
+    
       <div className="text-zone">
+      
         <h1>
           <AnimatedLetters
             letterClass={letterClass}
@@ -34,7 +36,7 @@ const About = () => {
             idx={15}
           />
         </h1>
-
+      
      <p>Hello!  I'm Neha Singh,
          a passionate and dedicated frontend developer
          looking for a role in established IT company with the opportunity

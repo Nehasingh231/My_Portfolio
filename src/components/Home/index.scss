@@ -9,7 +9,7 @@
   .text-zone {
     position: relative;
     left: 0;
-    top: auto; 
+    top: auto;
     transform: none;
     max-height: 90%;
     cursor: pointer;
@@ -65,21 +65,20 @@
       padding: 10px 18px;
       border: 1px solid yellow;
       margin-top: 45px;
-      animation: fadeIn 1s 1.8s backwards;
       white-space: nowrap;
 
       &:hover {
         background: rgb(207, 210, 21);
         color: black;
       }
-      
+
       &.glow {
         border: 1px solid rgb(213, 228, 71);
-        animation: glow 1.5s infinite alternate;
+        animation: glow 1.5s infinite alternate ;
       }
-
     }
   }
+
   .image-zone {
     max-width: 50%;
     overflow: hidden;
@@ -88,40 +87,48 @@
       height: auto;
       border-radius: 50%;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      animation: rotateIn 1s linear both;
-      animation-delay: 1.4s;
       animation: rotateIn 1s linear both, glow 1.5s infinite alternate;
       animation-delay: 1.4s, 0;
-     
     }
-  } 
-  
-@keyframes glow {
-  0% {
-    border-color: yellow;
   }
-  100% {
-    border-color: rgb(5, 84, 90);
-    box-shadow: 0 0 10px rgb(211, 8, 238), 0 0 10px rgb(211, 8, 238) ,0 0 10px rgb(211, 8, 238);
-  }
-}
 
-// Keyframes for other animations (if not defined already)
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
+  @keyframes glow {
+    0% {
+      border-color: yellow;
+    }
+    100% {
+      border-color: rgb(5, 84, 90);
+      box-shadow: 0 0 10px rgb(211, 8, 238), 0 0 10px rgb(211, 8, 238), 0 0 10px rgb(211, 8, 238);
+    }
   }
-  100% {
-    opacity: 1;
-  }
-}
 
-@keyframes rotateIn {
-  0% {
-    transform: rotate(-360deg);
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
-  100% {
-    transform: rotate(0deg);
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-}
+
+  @keyframes rotateIn {
+    0% {
+      transform: rotate(-360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 }
