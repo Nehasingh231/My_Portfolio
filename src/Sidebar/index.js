@@ -7,7 +7,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { faReadme } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => ( 
      <div className='nav-bar'>
@@ -29,11 +29,11 @@ const Sidebar = () => (
                     className="contact-link" to="/contact">
                     <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
                </NavLink>
-               
+
                <NavLink exact="true" activeclassname="active"
-                    className="project-link" to="/project">
-                    <FontAwesomeIcon icon={faReact} color="#4d4d4e" />
-               </NavLink>
+               className="project-link" to="/project">
+               <FontAwesomeIcon icon={faReadme} color="#4d4d4e" />
+          </NavLink>
 
           </nav>
 

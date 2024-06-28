@@ -78,20 +78,6 @@
       }
     }
   }
-
-  .image-zone {
-    max-width: 50%;
-    overflow: hidden;
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 50%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      animation: rotateIn 1s linear both, glow 1.5s infinite alternate;
-      animation-delay: 1.4s, 0;
-    }
-  }
-
   @keyframes glow {
     0% {
       border-color: yellow;
@@ -101,34 +87,33 @@
       box-shadow: 0 0 10px rgb(211, 8, 238), 0 0 10px rgb(211, 8, 238), 0 0 10px rgb(211, 8, 238);
     }
   }
+}
 
-  @keyframes moveUpDown {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
   }
+  50% {
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(0, -0px); /* Ensure it returns to the starting position */
+  }
+}
 
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+.image-zone {
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
 
-  @keyframes rotateIn {
-    0% {
-      transform: rotate(-360deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
+.image-zone img {
+  width: 150%; /* Ensure the image takes the full width of the container */
+  height: auto; /* Maintain the aspect ratio */
+  margin-right: 20%;
+ 
+  transform: scale(1.2); /* Scale the image to make it larger */
+  animation: floating 3s ease-in-out infinite; /* Apply the floating animation */
 }

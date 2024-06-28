@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './index.scss'
-import profileImage from '../../assets/images/neha img 2.jpg'
+import profileImage from '../../assets/images/heroImage.png'
 import AnimatedLetters from '../AnimatedLetters'
 import { useState, useEffect } from 'react'
 import Loader from 'react-loaders'
@@ -30,7 +30,7 @@ const Home = () => {
       setLetterClass('text-animate-hover')
     }, 4000)
 
-    return () => clearTimeout(timer) // Cleanup function to clear the timeout
+    return () => clearTimeout(timer) 
   }, [])
   return (
     <>
@@ -59,9 +59,8 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
-      <div className="image-zone flat-button glow">
-    
-      <img src={profileImage} alt="Profile" />
+      <div className="image-zone ">
+      <img src={profileImage} alt="Profile" className='floating' />
     </div>
     </div>
     
