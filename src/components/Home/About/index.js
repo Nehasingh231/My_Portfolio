@@ -12,6 +12,7 @@ import {
     } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 
+
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
@@ -36,6 +37,7 @@ const About = () => {
             idx={15}
           />
         </h1>
+ 
       
      <p>Hello!  I'm Neha Singh,
          a passionate and dedicated frontend developer
@@ -49,7 +51,7 @@ const About = () => {
          I love building web applications that are not only functional but also provide an excellent user experience.
      </p>
       </div>
-      <div className="stage-cube-cont">
+    <div className="stage-cube-cont">
       <div className='cubespinner'>
         <div className="face1">
           <FontAwesomeIcon icon={faAngular} color="#DD0031" />
@@ -70,7 +72,9 @@ const About = () => {
           <FontAwesomeIcon icon={faGitAlt} color="#5ED4F4" />
         </div>
       </div>
-    </div>
+    </div>   
+ 
+    
     </div>
     <Loader type="pacman" />
     </>
