@@ -24,8 +24,8 @@ const Project = ({ images, messages }) => {
               <div className="slider-message">
                   <h2 className='heading'>{messages[currentIndex].heading}</h2>
                   <p className='message'>{messages[currentIndex].text}</p>
-                  <button className='btn m-8 mx-10 p-5 px-7'> {messages[currentIndex].buttonText}</button>
-                  <button className='btn m-10 my-10 p-5 px-7'> {messages[currentIndex].anotherButton}</button>
+                  <button className='btn mt-20 mx-5 my-5 p-5 px-7'> {messages[currentIndex].buttonText}</button>
+                  <button className='btn mt-20 mx-5 my-10 p-5 px-7'> {messages[currentIndex].anotherButton}</button>
               </div>
           </div>
           <button onClick={goToNext} className="slider-button">❯</button>

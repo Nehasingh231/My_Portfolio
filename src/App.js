@@ -8,11 +8,19 @@ import project2 from './assets/images/project2.jpg'
 import project3 from './assets/images/project3.jpg'
 import { Home, About, Contact } from './components'
 
-const images = [project1, project2, project3]
+const images = [project3, project1, project2]
 
 
 
 const messages = [
+
+  {
+    heading: 'Food App Project',
+    text: 'This is a project to made people life easy, they can easily order healthy and delicious food in very less time and save there time as well.',
+    buttonText: 'SOURCE ',
+     anotherButton: 'DEMO'
+},
+
   {
       heading: 'Watch Wave Project',
       text: 'This is a project similar to Netflix, Deep learning of React ',
@@ -25,12 +33,7 @@ const messages = [
       buttonText: 'SOURCE ',
        anotherButton: 'DEMO'
   },
-  {
-      heading: 'Food App Project',
-      text: 'This is the third project',
-      buttonText: 'SOURCE ',
-       anotherButton: 'DEMO'
-  }
+ 
 ];
 
 function App() {
