@@ -11,27 +11,32 @@ import { Home, About, Contact } from './components'
 const images = [project3, project1, project2]
 
 
-
 const messages = [
 
   {
     heading: 'Food App Project',
     text: 'This is a project to made people life easy, they can easily order healthy and delicious food in very less time and save there time as well.',
     buttonText: 'SOURCE ',
-     anotherButton: 'DEMO'
+     anotherButton: 'DEMO',
+     sourceUrl: 'https://github.com/Nehasingh231/Food-App',
+     demoUrl: 'https://dice-roll-game-fawn.vercel.app/' //its dice roll game link
 },
 
   {
       heading: 'Watch Wave Project',
-      text: 'This is a project similar to Netflix, Deep learning of React ',
+      text: 'This is a project similar to Netflix,you can stay home and chill with Watch Wave. Deep learning of React. ',
       buttonText: 'SOURCE ',
-       anotherButton: 'DEMO'
+       anotherButton: 'DEMO',
+       sourceUrl: 'https://github.com/Nehasingh231/Food-App',
+       demoUrl: 'https://dice-roll-game-fawn.vercel.app/' //its dice roll game link
   },
   {
       heading: 'Code Editior Project',
-      text: 'This is the second project',
+      text: 'This is the a Code Editior App who makes your coding life so easy and happy.',
       buttonText: 'SOURCE ',
-       anotherButton: 'DEMO'
+       anotherButton: 'DEMO',
+       sourceUrl: 'https://github.com/Nehasingh231/Food-App',
+    demoUrl: 'https://dice-roll-game-fawn.vercel.app/' //its dice roll game link
   },
  
 ];
