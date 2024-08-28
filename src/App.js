@@ -20,7 +20,7 @@ const messages = [
     buttonText: 'SOURCE ',
      anotherButton: 'DEMO',
      sourceUrl: 'https://github.com/Nehasingh231/Food-App',
-     demoUrl: 'https://dice-roll-game-fawn.vercel.app/' //its dice roll game link
+     demoUrl: 'https://bloom-and-glow-blogging-website.vercel.app/' //its dice roll game link
 },
 
   {
