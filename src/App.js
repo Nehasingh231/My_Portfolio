@@ -15,7 +15,8 @@ const messages = [
 
   {
     heading: 'Food App Project',
-    text: 'This is a project to made people life easy, they can easily order healthy and delicious food in very less time and save there time as well.',
+    text: `A full-featured food ordering application that allows users to browse menus,
+     customize orders and add food to cart also star your favourite food.`,
     buttonText: 'SOURCE ',
      anotherButton: 'DEMO',
      sourceUrl: 'https://github.com/Nehasingh231/Food-App',
@@ -23,20 +24,23 @@ const messages = [
 },
 
   {
-      heading: 'Netflix-Gpt',
-      text: 'This is a project similar to Netflix,you can stay home and chill with Watch Wave. Deep learning of React. ',
+      heading: 'Dice Roll Game',
+      text: `An engaging browser-based game that allows users to roll dice and experience randomized outcomes with animated visuals. 
+      Built using vanilla JavaScript for game logic and CSS for styling and animations, 
+      providing an interactive and fun user experience. `,
       buttonText: 'SOURCE ',
        anotherButton: 'DEMO',
-       sourceUrl: 'https://github.com/Nehasingh231/NetflixGpt',
-       demoUrl: 'https://netflix-gpt-b1cbd.web.app' 
+       sourceUrl: 'https://github.com/Nehasingh231/Dice-Roll-Game',
+       demoUrl: 'https://dice-roll-game-fawn.vercel.app/' 
   },
   {
       heading: 'Code Editior Project',
-      text: 'This is the a Code Editior App who makes your coding life so easy and happy.',
+      text: ` A feature-rich and customizable code editor application designed for web development, 
+      providing an enhanced coding experience with modern features and a user-friendly interface.`,
       buttonText: 'SOURCE ',
        anotherButton: 'DEMO',
-       sourceUrl: 'https://github.com/Nehasingh231/Food-App',
-    demoUrl: 'https://dice-roll-game-fawn.vercel.app/' //its dice roll game link
+       sourceUrl: 'https://github.com/Nehasingh231/Code_Editor',
+       demoUrl: 'https://code-editor-theta-nine.vercel.app/' //
   },
  
 ];
