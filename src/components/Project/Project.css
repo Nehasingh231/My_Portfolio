@@ -5,7 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Jura', sans-serif;
+ 
 }
 
 .project-wrapper {
@@ -57,6 +57,7 @@
 }
 
 .project-info p {
+    font-family: jura;
   font-size: 15px;
   line-height: 1.4;
   color: #fff;
@@ -75,6 +76,7 @@
 }
 
 .project-buttons button {
+    font-family: jost;
   background-color: #795548;
   border: none;
   padding: 10px 16px;
