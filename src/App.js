@@ -6,46 +6,52 @@ import Project from './components/Project'
 import project1 from './assets/images/project1.jpg'
 import project2 from './assets/images/project2.jpg'
 import project3 from './assets/images/project3.jpg'
-import { Home, About, Contact} from './components'
+import { Home, About, Contact } from './components'
 
 const images = [project3, project1, project2]
 
-
 const messages = [
-
   {
-    heading: 'Food App Project',
-    text: `A full-featured food ordering application that allows users to browse menus,
-     customize orders and add food to cart also star your favourite food.`,
+    heading: 'Multi-E Commerce website',
+    text: `Developed during my internship using HTML, CSS, and JavaScript.
+Includes product listings, filters, cart, wishlist, and Razorpay payment integration.
+Responsive design with separate sections for men, women, and kids.
+Search bar, dropdown menus, smooth navigation, and product detail modals.
+Mimics real-world e-commerce flow with features like order form and login/signup system.
+Built with attention to layout, responsiveness, and user flow.`,
     buttonText: 'SOURCE ',
-     anotherButton: 'DEMO',
-     sourceUrl: 'https://github.com/Nehasingh231/Food-App',
-     demoUrl: 'https://bloom-and-glow-blogging-website.vercel.app/' //its dice roll game link
-},
+    anotherButton: 'DEMO',
+    sourceUrl: 'https://amoralofa-neha-e-commerce.pages.dev/',
+    demoUrl: 'https://amoralofa-neha-e-commerce.pages.dev/',
+  },
 
   {
-      heading: 'Dice Roll Game',
-      text: `An engaging browser-based game that allows users to roll dice and experience randomized outcomes with animated visuals. 
-      Built using vanilla JavaScript for game logic and CSS for styling and animations, 
-      providing an interactive and fun user experience. `,
-      buttonText: 'SOURCE ',
-       anotherButton: 'DEMO',
-       sourceUrl: 'https://github.com/Nehasingh231/Dice-Roll-Game',
-       demoUrl: 'https://dice-roll-game-fawn.vercel.app/' 
+    heading: 'Dice Roll Game',
+    text: `A fun dice game built using HTML, CSS, and JavaScript.
+Generates random dice results with smooth CSS animations and sound feedback.
+Responsive layout designed for all screen sizes.
+A great project to practice DOM manipulation, events, and dynamic content.
+Deployed live and completely developed independently to enhance JS fundamentals.
+Simple yet interactive game to improve frontend logic skills.`,
+    buttonText: 'SOURCE ',
+    anotherButton: 'DEMO',
+    sourceUrl: 'https://github.com/Nehasingh231/Dice-Roll-Game',
+    demoUrl: 'https://dice-roll-game-fawn.vercel.app/',
   },
   {
-      heading: 'Code Editior Project',
-      text: ` A feature-rich and customizable code editor application designed for web development, 
-      providing an enhanced coding experience with modern features and a user-friendly interface.`,
-      buttonText: 'SOURCE ',
-       anotherButton: 'DEMO',
-       sourceUrl: 'https://github.com/Nehasingh231/Code_Editor',
-       demoUrl: 'https://code-editor-theta-nine.vercel.app/' //
+    heading: 'Code Editior Project',
+    text: ` A browser-based real-time code editor made using React.js.
+Supports live preview of HTML, CSS, and JS code with split screen view.
+Includes syntax highlighting and resizable panes for better user experience.
+Built from scratch using React hooks, useState and useEffect.
+Perfect for learning state management and layout structuring.
+Emphasizes UI minimalism, performance, and real-time rendering concepts.`,
+    buttonText: 'SOURCE ',
+    anotherButton: 'DEMO',
+    sourceUrl: 'https://github.com/Nehasingh231/Code_Editor',
+    demoUrl: 'https://code-editor-theta-nine.vercel.app/', //
   },
- 
-];
-
- 
+]
 
 function App() {
   return (

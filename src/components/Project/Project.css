@@ -1,90 +1,144 @@
-.slider {
-    position: relative;
-    width: 80%;
-    max-width: 800px;
-    margin: 50px auto;
-    overflow: hidden;
-    border-radius: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Jura', sans-serif;
 }
 
-.slider-content {
-    position: relative;
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+.project-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 1rem;
 }
 
-.slider-image {
-    width: 100%;
-    height: 500px; 
-    object-fit: cover; 
-  
+.project-card {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  height: 380px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4;
 }
 
-.slider-message {
-    position: absolute;
-    bottom: 0;
-    left: 0; 
-    width: 30%;
-    height: 100%;
-    color: white;
-    background-color:#4aa89f; 
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center; 
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    font-size: 1.2em;
-
-      .heading{
-    color: black;
-      font-size: 28px;
-      margin-bottom: 20px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-     .message{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-         font-size: 16px;
-     }
-     .btn{
-        color: white;
-        font-size: 15px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        border-radius: 10px;
-        background-color: #795548;
-     }
+.project-img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.slider-button {
-    position: absolute;
-    top: 50%;
-    width: 50px;
-    height: 50px;
-    transform: translateY(-50%);
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 50px;
-    padding: 10px;
-    cursor: pointer;
+.project-info {
+  width: 50%;
+  padding: 25px;
+  background-color: #4aa89f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
-.slider-button:focus {
-    outline: none;
+.project-info h2 {
+    color: brown;
+  font-size: 24px;
+  font-weight: 800;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+    font-family: 'Jost', sans-serif;
 }
 
-.slider-button:first-of-type {
-    left: 10px;
+.project-info p {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #fff;
+  margin-bottom: 26px;
+  display: -webkit-box;
+  -webkit-line-clamp: 12; /* Show 7 lines of text */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.slider-button:last-of-type {
-    right: 10px;
+.project-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.message-display {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-    border-radius: 5px;
+.project-buttons button {
+  background-color: #795548;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: normal;
+  word-wrap: break-word;
+  transition: background 0.3s ease;
+}
+
+.project-buttons button:hover {
+  background-color: #5d4037;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  color: #333;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav-btn.left {
+  left: 10px;
+}
+
+.nav-btn.right {
+  right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+    height: auto;
   }
-  
+
+  .project-img {
+    width: 100%;
+    height: 220px;
+  }
+
+  .project-info {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .project-info p {
+    height: auto;
+    max-height: 120px;
+  }
+
+  .project-buttons {
+    justify-content: center;
+  }
+}
