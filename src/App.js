@@ -3,12 +3,12 @@ import './App.scss'
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Project from './components/Project'
-import project1 from './assets/images/project1.jpg'
-import project2 from './assets/images/project2.jpg'
-import project3 from './assets/images/project3.jpg'
+import project1 from './assets/images/project1.png'
+import project2 from './assets/images/project2.png'
+import project3 from './assets/images/project3.png'
 import { Home, About, Contact } from './components'
 
-const images = [project3, project1, project2]
+const images = [project1,project2, project3]
 
 const messages = [
   {

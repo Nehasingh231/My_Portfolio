@@ -30,13 +30,13 @@
 }
 
 .project-img {
-  width: 50%;
+  width: 60%;
   height: 100%;
   object-fit: cover;
 }
 
 .project-info {
-  width: 50%;
+  width: 40%;
   padding: 25px;
   background-color: #4aa89f;
   color: white;
